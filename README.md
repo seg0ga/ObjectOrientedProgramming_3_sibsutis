@@ -8,9 +8,9 @@
 |2|Класс-наследник|2_klass-heir.cpp|2_protection.cpp|Лаб№2_Демин.pdf|100|
 |3|Потоковые классы. Текстовые и бинарные файлы|3_text_binary_1.cpp 3_text_binary_2.cpp|3_protection.cpp|Лаб№3_Демин.pdf|0|
 |4|Контейнерный класс Vector|4_vector.cpp|4_protection.cpp|Лаб№4_Демин.pdf|0|
-|5|Контейнерный класс Stack||5_protection.cpp|Лаб№5_Демин.pdf|0|
-|6|Контейнерный класс Очередь||6_protection.cpp|Лаб№6_Демин.pdf|0|
-|7|Контейнерный класс список (list)||7_protection.cpp|Лаб№7_Демин.pdf|0|
+|5|Контейнерный класс Stack|5_stack.cpp|5_protection.cpp|Лаб№5_Демин.pdf|0|
+|6|Контейнерный класс Deque|6_queue.cpp|6_protection.cpp|Лаб№6_Демин.pdf|0|
+|7|Контейнерный класс List|7_list.cpp|7_protection.cpp|Лаб№7_Демин.pdf|0|
 |8|Графический интерфейс||8_protection.cpp|Лаб№8_Демин.pdf|0|
 
 
