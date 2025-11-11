@@ -30,23 +30,23 @@ int main() {
     cin.ignore();
     
     for (int i=0;i<n;i++){
-        string phone, name, passport;
-        cout<<"\nАбонент "<<i+1<<":"<<endl;
-        cout<<"Номер телефона: ";
-        getline(cin, phone);
-        cout<<"ФИО: ";
-        getline(cin, name);
-        cout<<"Паспорт: ";
-        getline(cin, passport);
-        
-        Abonent newAbonent(phone, name, passport);
-        
-        auto it=abonents.begin();
-        while (it!=abonents.end()&&it->name<name){it++;}
-        abonents.insert(it, newAbonent);}
+            string phone, name, passport;
+            cout<<"\nАбонент "<<i+1<<":"<<endl;
+            cout<<"Номер телефона: ";
+            getline(cin, phone);
+            cout<<"ФИО: ";
+            getline(cin, name);
+            cout<<"Паспорт: ";
+            getline(cin, passport);
+            
+            Abonent newAbonent(phone, name, passport);
+            
+            auto it=abonents.begin();
+            while (it!=abonents.end()&&it->name<name){it++;}
+            abonents.insert(it, newAbonent);}
     
     cout<<"\nОТСОРТИРОВАННЫЙ СПИСОК"<<endl;
-    for (auto it=abonents.begin();it!=abonents.end();it++){it->display();}
+    for (Abonent a:abonents){a.display();}
     
     int searchCount;
     cout<<"\nВведите количество номеров для поиска: ";
@@ -54,14 +54,14 @@ int main() {
     cin.ignore();
     
     for (int i=0;i<searchCount;i++){
-        string searchPhone;
+        string Phone;
         cout<<"Введите номер телефона для поиска "<<i+1<<": ";
-        getline(cin,searchPhone);
+        getline(cin,Phone);
         
         bool found=false;
-        for (auto it=abonents.begin();it!=abonents.end();it++){
-            if (it->phone==searchPhone){
-                cout<<"Владелец: "<<it->name<<endl;
+        for (Abonent a:abonents){
+            if (a.phone==Phone){
+                cout<<"Владелец: "<<a.name<<endl;
                 found=true;
                 break;}}
         
